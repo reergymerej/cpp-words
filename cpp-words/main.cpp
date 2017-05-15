@@ -183,10 +183,15 @@ int main(int argc, const char * argv[])
     goodGuess = guess == word;
     showResult(word, goodGuess);
     score = updateScore(goodGuess, score);
+    if (score == -10)
+    {
+      std::cout << "Game Over" << std::endl;
+      return 0;
+    }
     if (!promptToContinue())
     {
       endGame();
-      return 1;
+      return 0;
     }
   }
   return 0;
