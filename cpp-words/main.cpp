@@ -92,7 +92,7 @@ std::string wordBank [73] =
   "virtual",
   "void",
   "volatile",
-  "wchar_t:wchar_t",
+  "wchar_t",
   "while",
   "xor",
   "xor_eq"
